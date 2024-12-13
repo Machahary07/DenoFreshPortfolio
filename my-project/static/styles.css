@@ -1,0 +1,364 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+button {
+  color: inherit;
+}
+button, [role="button"] {
+  cursor: pointer;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
+}
+img,
+svg {
+  display: block;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  /* Add any other styles for the links */
+}
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("./6230277.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.herocontainer {
+  padding: 24px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 150px;
+  font-weight: 800;
+  background: linear-gradient(to right, white, rgb(59, 0, 187)); /* Gradient from black to white */
+  -webkit-background-clip: text; /* Ensures the gradient applies to the text */
+  color: transparent;
+  margin-bottom: 24px;
+  position: relative;
+  display: inline-block;
+}
+
+.heading::before {
+  content: ''; 
+  position: absolute;
+  top: -2px; /* Small top border */
+  left: -2px; /* Small left border */
+  right: -2px; /* Small right border */
+  bottom: -2px; /* Small bottom border */
+  background: white; /* Border color */
+  z-index: -1;
+}
+
+.description {
+  font-size: 1.25rem;
+  color: #a0a0a0;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px 24px;
+}
+
+.navcontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-button {
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-button:hover {
+  color: #1e90ff; /* Hover color for the links */
+}
+
+/* ----------------------------work section start------------------------*/
+.work-section {
+  padding: 80px 0;
+  background-color: black;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 48px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.project-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.category {
+  font-size: 0.875rem;
+  color: #1e90ff;
+  margin-bottom: 8px;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.project-description {
+  color: #d1d1d1;
+}
+/* -------------skills section -------------*/
+.skills-section {
+  padding: 80px 0;
+  background-color: rgb(0, 0, 0); /* Semi-transparent black background */
+}
+
+.skillscontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 32px;
+}
+
+.skill-card {
+  background-color: rgb(28, 117, 251);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+  background-color: rgb(64, 115, 199);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.skill-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.skill-description {
+  color: #b0b0b0;
+  font-size: 1rem;
+}
+
+/* Contact.css */
+
+.contact-section {
+  padding: 5rem 2rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.contactcontainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.content .description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #1e90ff;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #555;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.textarea {
+  resize: none;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0077cc;
+}
