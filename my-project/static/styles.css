@@ -246,9 +246,10 @@ html {
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 32px;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center the skill cards */
+  flex-wrap: wrap; /* Allow wrapping of cards */
+  gap: 32px; /* Space between cards */
 }
 
 .skill-card {
@@ -258,6 +259,8 @@ html {
   text-align: center;
   backdrop-filter: blur(10px);
   transition: background-color 0.3s ease-in-out;
+  /* Set a default width for larger screens */
+  width: 250px; /* Default width for larger screens */
 }
 
 .skill-card:hover {
@@ -361,4 +364,141 @@ html {
 
 .submit-button:hover {
   background-color: #0077cc;
+}
+
+/* Responsive text sizes */
+@media (max-width: 600px) {
+  .heading {
+    font-size: 80px; /* Smaller heading for mobile */
+  }
+
+  .description {
+    font-size: 1rem; /* Smaller description for mobile */
+  }
+
+  .section-title {
+    font-size: 2rem; /* Smaller section title for mobile */
+  }
+
+  .skills-title {
+    font-size: 2rem; /* Smaller skills title for mobile */
+  }
+
+  .skill-name {
+    font-size: 1.2rem; /* Smaller skill name for mobile */
+  }
+
+  .content .title {
+    font-size: 2rem; /* Smaller contact title for mobile */
+  }
+
+  .content .description {
+    font-size: 1rem; /* Smaller contact description for mobile */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .heading {
+    font-size: 100px; /* Medium heading for tablets */
+  }
+
+  .description {
+    font-size: 1.1rem; /* Medium description for tablets */
+  }
+
+  .section-title {
+    font-size: 2.2rem; /* Medium section title for tablets */
+  }
+
+  .skills-title {
+    font-size: 2.2rem; /* Medium skills title for tablets */
+  }
+
+  .skill-name {
+    font-size: 1.4rem; /* Medium skill name for tablets */
+  }
+
+  .content .title {
+    font-size: 2.2rem; /* Medium contact title for tablets */
+  }
+
+  .content .description {
+    font-size: 1.1rem; /* Medium contact description for tablets */
+  }
+}
+
+@media (min-width: 769px) {
+  .heading {
+    font-size: 150px; /* Original heading for larger screens */
+  }
+
+  .description {
+    font-size: 1.25rem; /* Original description for larger screens */
+  }
+
+  .section-title {
+    font-size: 2.5rem; /* Original section title for larger screens */
+  }
+
+  .skills-title {
+    font-size: 2.5rem; /* Original skills title for larger screens */
+  }
+
+  .skill-name {
+    font-size: 1.5rem; /* Original skill name for larger screens */
+  }
+
+  .content .title {
+    font-size: 2.5rem; /* Original contact title for larger screens */
+  }
+
+  .content .description {
+    font-size: 1.2rem; /* Original contact description for larger screens */
+  }
+}
+
+/* Responsive adjustments for skill cards */
+@media (max-width: 600px) {
+  .skill-card {
+    width: 90%; /* Smaller width for mobile */
+    padding: 16px; /* Smaller padding for mobile */
+  }
+
+  .skill-name {
+    font-size: 1.2rem; /* Smaller skill name for mobile */
+  }
+
+  .skill-description {
+    font-size: 0.9rem; /* Smaller skill description for mobile */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .skill-card {
+    width: 80%; /* Slightly smaller width for tablets */
+    padding: 20px; /* Adjust padding for tablets */
+  }
+
+  .skill-name {
+    font-size: 1.4rem; /* Medium skill name for tablets */
+  }
+
+  .skill-description {
+    font-size: 1rem; /* Medium skill description for tablets */
+  }
+}
+
+@media (min-width: 769px) {
+  .skill-card {
+    width: 250px; /* Original width for larger screens */
+    padding: 24px; /* Original padding for larger screens */
+  }
+
+  .skill-name {
+    font-size: 1.5rem; /* Original skill name for larger screens */
+  }
+
+  .skill-description {
+    font-size: 1rem; /* Original skill description for larger screens */
+  }
 }

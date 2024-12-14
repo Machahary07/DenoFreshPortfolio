@@ -1,5 +1,4 @@
 // work.tsx
-
 const projects = [
     {
       title: "E-Commerce Redesign",
