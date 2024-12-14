@@ -10,9 +10,9 @@ function Contacts() {
   
             <div className="icons">
               <a href="mailto:jeumachahary07@gmail.com" className="icon">EMail</a>
-              <a href="#" className="icon">X</a>
-              <a href="#" className="icon">LinkedIn</a>
-              <a href="#" className="icon">Instagram</a>
+              <a href="https://www.instagram.com/__natsu.css___/" className="icon">Instagram</a>
+              <a href="https://www.linkedin.com/in/jeu-machahary-71b13a330/" className="icon">LinkedIn</a>
+              <a href="https://github.com/Machahary07" className="icon">GitHub</a>
             </div>
   
             <form className="form">
