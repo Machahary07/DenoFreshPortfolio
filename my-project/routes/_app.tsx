@@ -10,7 +10,7 @@ export default function App() {  // Add parentheses here
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>my-project</title>
+        <title>Jeu Machahary - UI/UX Designer</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>

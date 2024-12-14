@@ -3,7 +3,7 @@ export const Navbar = () => {
     <nav className="navbar">
       <div className="navcontainer">
         <div className="navbar-content">
-          <div className="logo">Portfolio</div>
+          <div className="logo">JeuMachahary</div>
           <div className="nav-links">
             {["work", "skills", "contact"].map((section) => (
               <a
