@@ -34,9 +34,9 @@ const projects = [
                   className="project-image"
                 />
                 <div className="project-overlay">
-                  <span className="category">{project.category}</span>
-                  <h3 className="project-title">{project.title}</h3>
-                  <p className="project-description">{project.description}</p>
+                    <span className="category">{project.category}</span>
+                    <h3 className="project-title">{project.title}</h3>
+                    <p className="project-description">{project.description}</p>
                 </div>
               </div>
             ))}

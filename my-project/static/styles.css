@@ -63,6 +63,17 @@ html {
 .heading {
   font-size: 150px;
   font-weight: 800;
+  background: black; /* Gradient from black to white */
+  -webkit-background-clip: text; /* Ensures the gradient applies to the text */
+  color: transparent;
+  margin-bottom: 24px;
+  position: relative;
+  display: inline-block;
+}
+
+.destiny {
+  font-size: 150px;
+  font-weight: 800;
   background: linear-gradient(to right, white, rgb(59, 0, 187)); /* Gradient from black to white */
   -webkit-background-clip: text; /* Ensures the gradient applies to the text */
   color: transparent;
@@ -136,6 +147,61 @@ html {
   color: #1e90ff; /* Hover color for the links */
 }
 
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px 24px;
+}
+
+.navcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+/* Dropdown styles */
+.dropdown {
+  display: none; /* Hide by default */
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* Adjust based on your navbar height */
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+
+.dropdown.open {
+  display: flex; /* Show when open */
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .dropdown {
+    max-height: 200px; /* Set a max height for the dropdown */
+  }
+}
 /* ----------------------------work section start------------------------*/
 .work-section {
   padding: 80px 0;
@@ -501,4 +567,21 @@ html {
   .skill-description {
     font-size: 1rem; /* Original skill description for larger screens */
   }
+}
+
+@keyframes appear {
+  from{
+      opacity: 0;
+      scale: 0.5;
+  }
+  to{
+      opacity: 1;
+      scale: 1;
+  }
+}
+
+.skill-card, .skills-title, .container, .content {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }

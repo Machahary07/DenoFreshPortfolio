@@ -3,8 +3,9 @@ export function Hero() {
         <section className="hero">
             <div className="herocontainer">
                 <h1 className="heading">
-                    Design Your Own Destiny
+                    Design Your Own
                 </h1>
+                <h1 className="destiny">Destiny</h1>
                 <p className="description">
                     Creating beautiful digital experiences that leave a lasting impression
                 </p>
