@@ -533,7 +533,7 @@ html {
 }
 
 /* Responsive adjustments for skill cards */
-@media (max-width: 600px) {
+@media (max-width: 200px) {
   .skill-card {
     width: 90%; /* Smaller width for mobile */
     padding: 16px; /* Smaller padding for mobile */
