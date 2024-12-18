@@ -18,7 +18,7 @@ export default function App() {  // Add parentheses here
         <section>
           <Navbar />
           <Hero />
-          <Work />
+          {/* <Work /> */}
           <Work2/>
           <Skills />
           <Contacts />

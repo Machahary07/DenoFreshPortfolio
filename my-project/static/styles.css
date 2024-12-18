@@ -114,7 +114,7 @@ html {
 }
 
 .navcontainer {
-  max-width: 1200px;
+  max-width: auto;
   margin: 0 auto;
 }
 
@@ -351,6 +351,15 @@ html {
 }
 
 /* Contact.css */
+
+.icon img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
 
 .contact-section {
   padding: 5rem 2rem;
