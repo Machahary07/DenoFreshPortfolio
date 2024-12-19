@@ -4,6 +4,7 @@ import Work from '../components/Work.tsx';
 import Skills from '../components/Skills.tsx';
 import Contacts from "../components/Contacts.tsx";
 import Work2 from "../components/Work2.tsx";
+import Work3 from "../components/Work3.tsx";
 
 export default function App() {  // Add parentheses here
   return (
@@ -20,6 +21,7 @@ export default function App() {  // Add parentheses here
           <About/>
           <Work2/>
           <Work />
+          <Work3/>
           <Skills />
           <Contacts />
         </section>
