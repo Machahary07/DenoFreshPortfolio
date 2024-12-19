@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar.tsx";
-import { Hero } from "../components/Hero.tsx";
+import { About } from "../components/About.tsx"
 import Work from '../components/Work.tsx';
 import Skills from '../components/Skills.tsx';
 import Contacts from "../components/Contacts.tsx";
@@ -17,9 +17,9 @@ export default function App() {  // Add parentheses here
       <body>
         <section>
           <Navbar />
-          <Hero />
-          {/* <Work /> */}
+          <About/>
           <Work2/>
+          <Work />
           <Skills />
           <Contacts />
         </section>

@@ -47,7 +47,7 @@ html {
 
 .hero {
   height: 100vh;
-  background-image: url("./6230277.svg");
+  background-image: url("./Me.svg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -61,9 +61,9 @@ html {
 }
 
 .heading {
-  font-size: 150px;
+  font-size: 130px;
   font-weight: 800;
-  background: black; /* Gradient from black to white */
+  background: #ffffff; /* Gradient from black to white */
   -webkit-background-clip: text; /* Ensures the gradient applies to the text */
   color: transparent;
   margin-bottom: 24px;
@@ -71,10 +71,10 @@ html {
   display: inline-block;
 }
 
-.destiny {
+.design {
   font-size: 150px;
   font-weight: 800;
-  background: linear-gradient(to right, white, rgb(59, 0, 187)); /* Gradient from black to white */
+  background: linear-gradient(to right, rgb(0, 153, 255), rgb(97, 23, 255)); /* Gradient from black to white */
   -webkit-background-clip: text; /* Ensures the gradient applies to the text */
   color: transparent;
   margin-bottom: 24px;
@@ -95,7 +95,7 @@ html {
 
 .description {
   font-size: 1.25rem;
-  color: #a0a0a0;
+  color: #ffffff;
   max-width: 640px;
   margin: 0 auto;
 }
@@ -103,10 +103,15 @@ html {
 
 /* Navbar styles */
 .navbar {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 0 1rem;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 40;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
@@ -114,8 +119,9 @@ html {
 }
 
 .navcontainer {
-  max-width: auto;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-content {
@@ -127,11 +133,19 @@ html {
 .logo {
   font-size: 1.25rem;
   font-weight: bold;
+  margin-left: 100px;
 }
 
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 5rem;
+  backdrop-filter: blur(3px);
+  box-sizing: border-box;
+  padding: 9px;
+  border-radius: 15px;
+  overflow: hidden;
+  gap: 250px;
+  margin-left: 500px;
 }
 
 .nav-button {
@@ -165,43 +179,6 @@ html {
   align-items: center;
 }
 
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.bar {
-  height: 3px;
-  width: 25px;
-  background-color: white;
-  margin: 3px 0;
-  transition: all 0.3s ease;
-}
-
-/* Dropdown styles */
-.dropdown {
-  display: none; /* Hide by default */
-  flex-direction: column;
-  position: absolute;
-  top: 60px; /* Adjust based on your navbar height */
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  width: 100%;
-  transition: max-height 0.3s ease;
-  overflow: hidden;
-}
-
-.dropdown.open {
-  display: flex; /* Show when open */
-}
-
-/* Media query for mobile */
-@media (max-width: 768px) {
-  .dropdown {
-    max-height: 200px; /* Set a max height for the dropdown */
-  }
-}
 /* ----------------------------work section start------------------------*/
 .work-section {
   padding: 80px 0;
@@ -593,4 +570,79 @@ html {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+}
+
+/* animated text */
+
+.animated-text{
+  font-size: 130px;
+  font-weight: 800;
+  min-width: 280px;
+}
+
+.animated-text span{
+  position: relative;
+}
+
+.animated-text span::before{
+  content: "Youtuber";
+  color: #1e90ff;
+  animation: words 20s infinite;
+}
+
+.animated-text span::after{
+  content: "";
+  position: absolute;
+  width: calc(110% + 8px);
+  height: 110%;
+  background-color: rgba(23, 24, 25, 1);
+  border-left: 2px solid #1e90ff;
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to{
+      border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes words {
+  0%,20%{
+      content: "Design_";
+  }
+  21%,40%{
+      content: "Create_";
+  }
+  41%,60%{
+      content: "Live_";
+  }
+  61%,80%{
+      content: "WorkOn_";
+  }
+  81%,100%{
+      content: "Enjoy_";
+  }
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+      width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+      width: calc(100% + 8px);
+  }
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .animated-text {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-text {
+    font-size: 65px;
+  }
 }

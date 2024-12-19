@@ -34,18 +34,25 @@ function Contacts() {
             <a href="https://github.com/Machahary07" className="icon">{social[3].icon}</a>
           </div>
 
-          <form className="form">
-            <div className="form-group">
-              <input type="text" placeholder="Your Name" className="input" required />
-            </div>
-            <div className="form-group">
-              <input type="email" placeholder="Your Email" className="input" required />
-            </div>
-            <div className="form-group">
-              <textarea placeholder="Your Message" rows={4} className="input textarea" required></textarea>
-            </div>
-            <button type="submit" className="submit-button">Send Message</button>
-          </form>
+          <p>&copy; 2024 YourCompanyName. All Rights Reserved.</p>
+          <p><br/></p>
+          <nav>
+            <a href="#About" style="color: white; margin: 0 10px; text-decoration: none;">About</a>
+            <a href="#work" style="color: white; margin: 0 10px; text-decoration: none;">Work</a>
+            <a href="#skills" style="color: white; margin: 0 10px; text-decoration: none;">Skills</a>
+            <a href="#contact" style="color: white; margin: 0 10px; text-decoration: none;">Contact</a>
+          </nav>
+          <p><br/></p>
+          <p><br/></p>
+          <p><br/></p>
+          <p><br/></p>
+          <p><br/></p>
+          <p><br/></p>
+          <p><br/></p>
+          <p><br/></p>
+          <p><br/></p>
+          <p><br/></p>
+
         </div>
       </div>
     </section>

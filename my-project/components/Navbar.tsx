@@ -5,7 +5,7 @@ export const Navbar = () => {
         <div className="navbar-content">
           <div className="logo">JeuMachahary</div>
           <div className="nav-links">
-            {["work", "skills", "contact"].map((section) => (
+            {["About" ,"work", "skills", "contact"].map((section) => (
               <a
                 key={section}
                 href={`#${section}`}
