@@ -34,7 +34,7 @@ function Contacts() {
             <a href="https://github.com/Machahary07" className="icon">{social[3].icon}</a>
           </div>
 
-          <p>&copy; 2024 YourCompanyName. All Rights Reserved.</p>
+          <p>&copy; 2024 JeuMachahary. All Rights Reserved.</p>
           <p><br/></p>
           <nav>
             <a href="#About" style="color: white; margin: 0 10px; text-decoration: none;">About</a>
@@ -43,6 +43,7 @@ function Contacts() {
             <a href="#contact" style="color: white; margin: 0 10px; text-decoration: none;">Contact</a>
           </nav>
           <p><br/></p>
+          <p>WhatsApp business : +91 78961 75454</p>
           <p><br/></p>
           <p><br/></p>
           <p><br/></p>
